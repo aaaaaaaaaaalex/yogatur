@@ -1,0 +1,30 @@
+.header{
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 1;
+
+	background-color: transparent;
+
+	&__inner{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-top: 20px;
+	}
+	&__text{
+		margin-bottom: 8px;
+		
+		font-size: 14px;
+		font-weight: 400;
+		color: $white;
+	}
+	&__tel-link{
+		margin-bottom: 8px;
+
+		font-size: 20px;
+		font-weight: 700;
+		color: $white;
+	}
+}

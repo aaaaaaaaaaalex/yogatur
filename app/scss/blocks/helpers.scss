@@ -1,0 +1,36 @@
+// Помощники
+.tac{
+	text-align: center;
+}
+.tar{
+	text-align: right;
+}
+.tal{
+	text-align: left;
+}
+.imgr{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+.mb0{
+	margin-bottom: 0;
+}
+.bold{
+	font-weight: 700;
+}
+
+// Медия Помощники
+.helper-media{
+
+	&-tac-lg{
+		@media ($lg){
+			text-align: center;
+		}
+	}
+	&-tac-md{
+		@media ($md){
+			text-align: center;
+		}
+	}
+}

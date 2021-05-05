@@ -1,0 +1,46 @@
+.intro{
+	position: relative;
+	height: 100vh;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	background: #B1B3C2 url("../img/intro/intro.png") center/cover no-repeat;
+	text-align: center;
+
+	&__inner{
+	
+	}
+	&__title{
+		margin-bottom: 40px;
+		
+		font-size: 60px;
+		font-weight: 500;
+		color: $white;
+	}
+	&__subtitle{
+		margin-bottom: 10px;
+
+		font-size: 20px;
+		font-weight: 400;
+		color: $white;
+	}
+	&__mini-title{
+		margin-bottom: 100px;
+
+		font-size: 16px;
+		font-weight: 400;
+		color: $white;
+	}
+	&__social{
+		position: absolute;
+		width: 100%;
+		bottom: 40px;
+		left: 0;
+		z-index: 1;
+
+		display: flex;
+		justify-content: center;
+	}
+}
