@@ -1,18 +1,4 @@
-jQuery(function() {
-	function testWebP(callback) {
-    var webP = new Image();
-    webP.onload = webP.onerror = function () {
-        callback(webP.height == 2); };
-        webP.src = "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA";
-    }
-    testWebP(function (support) {
-    if (support == true) {
-        document.querySelector('body').classList.add('webp');
-    }else{
-        document.querySelector('body').classList.add('no-webp');
-    }
-});
-	/*!
+/*!
  * parallax.js v1.5.0 (http://pixelcog.github.io/parallax.js/)
  * @copyright 2016 PixelCog, Inc.
  * @license MIT (https://github.com/pixelcog/parallax.js/blob/master/LICENSE)
@@ -424,6 +410,3 @@ jQuery(function() {
   });
 
 }(jQuery, window, document));
-
-	
-});

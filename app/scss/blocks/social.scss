@@ -1,16 +1,33 @@
 .social{
 	display: flex;
 
-	&__item{
+	&__link{
 		margin: 0 5px;
+	}
+	&__item{
+		width: 26px;
+		height: 26px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 
 		border-radius: 50%;
 		border: 1px solid $white;
+		background: transparent;
+
+		&:hover{
+			background-color: $white;
+
+			.social__icon{
+				fill: $black;
+			}
+		}
 	}
 	&__icon{
 		display: block;
 		fill: $white;
-		height: 14px;
-		width: 14px;
+		height: 13px;
+		width: 13px;
+
 	}
 }
