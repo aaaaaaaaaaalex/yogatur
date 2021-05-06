@@ -8,6 +8,10 @@
     }
 }
 
+// Vendor
+@import "vendor/slick";
+
+
 
 @import "fonts";
 @import "reset";
@@ -42,6 +46,9 @@ body{
 // Blocks
 @import "blocks/logo";
 @import "blocks/social";
+@import "blocks/section";
+@import "blocks/five-block";
+@import "blocks/slider";
 @import "blocks/nav";
 @import "blocks/btn";
 

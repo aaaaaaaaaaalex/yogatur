@@ -10,16 +10,21 @@
 	&__right{
 		width: 50%;
 	}
-	&__img{
-		display: block;
-		width: 100%;
-		max-width: 390px;
-		margin-right: 0;
+	&__left{
+		display: flex;
+		justify-content: flex-end;
+		padding-right: 40px;
 	}
 	&__right{
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
+		padding-left: 40px;
+	}
+	&__img{
+		display: block;
+		width: 100%;
+		max-width: 390px;
 	}
 	&__title{
 		margin-bottom: 32px;
