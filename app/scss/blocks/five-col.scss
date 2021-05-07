@@ -1,0 +1,25 @@
+.five-col{
+	width: 100%;
+	max-width: 625px;
+	margin: 0 auto;
+
+	&__item{
+		margin: 0 auto 30px;
+		display: flex;
+		align-items: center;
+	}
+	&__img{
+		display: block;
+		width: 100%;
+		max-width: 120px;
+		margin-right: 40px;
+	}
+	&__text{
+		width: 100%;
+		max-width: 465px;
+
+		font-size: 18px;
+		font-weight: 300;
+		color: $black;
+	}
+}

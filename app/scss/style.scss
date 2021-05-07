@@ -38,6 +38,9 @@ body{
 @import "section/header";
 @import "section/intro";
 @import "section/what";
+@import "section/wait";
+@import "section/proga";
+@import "section/aurveda";
 @import "section/footer";
 
 
@@ -45,12 +48,14 @@ body{
 
 // Blocks
 @import "blocks/logo";
+@import "blocks/btn";
 @import "blocks/social";
 @import "blocks/section";
 @import "blocks/five-block";
 @import "blocks/slider";
+@import "blocks/eight-block";
+@import "blocks/five-col";
 @import "blocks/nav";
-@import "blocks/btn";
 
 
 

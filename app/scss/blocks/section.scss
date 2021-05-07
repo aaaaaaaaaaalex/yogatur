@@ -13,4 +13,17 @@
 		display: block;
 		margin: 0 auto 80px;
 	}
+	&__text{
+		margin-bottom: 40px;
+
+		font-size: 18px;
+		font-weight: 300;
+		color: $black;
+		text-align: center;
+	}
+	&__p{
+		&:first-child{
+			margin-bottom: 20px;
+		}
+	}
 }
