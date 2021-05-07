@@ -532,38 +532,29 @@ body.no-scroll {
   color: #000;
 }
 
-.slider__wrap {
+.slider-container {
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
 }
 
-.slider__subitem {
-  padding: 0 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.slider__wrap-img {
-  width: 100%;
-}
-
 .slider__img {
   display: block;
   width: 100%;
-  height: auto;
+  max-width: 850px;
+  margin: 0 auto;
 }
 
 .slick-slide {
-  padding: 40px 0;
+  padding-top: 25px;
 }
 
-.slick-slide.slick-center {
-  padding: 0;
+.slick-center {
+  padding-top: 0;
+}
+
+.slick-center img {
+  max-width: 940px;
 }
 
 .btn {

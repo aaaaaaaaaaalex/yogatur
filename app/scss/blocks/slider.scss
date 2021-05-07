@@ -1,34 +1,22 @@
 .slider{
-	&__wrap{
+	&-container{
 		width: 100%;
 		max-width: 1920px;
 		margin: 0 auto;
 	}
-	&__item{
-		// max-height: 530px;
-		// max-width: 940px;
-
-	}
-	&__subitem{
-		padding: 0 15px;
-		display: flex;
-		align-items: center;
-	}
-	&__wrap-img{
-		width: 100%;
-	}
 	&__img{
 		display: block;
 		width: 100%;
-		height: auto;
+		max-width: 850px;
+		margin: 0 auto;
 	}
 }
 .slick-slide{
-	padding: 40px 0;
-	
-	// transform: scale(1.0);
+	padding-top: 25px;
 }
-.slick-slide.slick-center{
-	padding: 0;
-	// transform: scale(1.0);
+.slick-center{
+	padding-top: 0;
+}
+.slick-center img{
+	max-width: 940px;
 }
