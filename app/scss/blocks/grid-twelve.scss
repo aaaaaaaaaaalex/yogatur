@@ -1,0 +1,14 @@
+.grid-twelve{
+	display: flex;
+	flex-wrap: wrap;
+
+	&__item{
+		width: 33.3333%;
+		padding: 10px;
+	}
+	&__img{
+		display: block;
+		width: 100%;
+		max-width: 139px;
+	}
+}

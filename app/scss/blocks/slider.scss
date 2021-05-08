@@ -3,6 +3,13 @@
 	max-width: 1920px;
 	margin: 0 auto;
 	
+	&__body{
+		height: 480px;
+		overflow: hidden;
+	}
+	&__body.slick-initialized{
+		height: auto;
+	}
 	&__substrate{
 		width: 100%;
 		max-width: 850px;

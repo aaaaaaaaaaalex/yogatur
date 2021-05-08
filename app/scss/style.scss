@@ -41,6 +41,10 @@ body{
 @import "section/wait";
 @import "section/proga";
 @import "section/aurveda";
+@import "section/instructors";
+@import "section/reviews";
+@import "section/why";
+@import "section/price";
 @import "section/footer";
 
 
@@ -48,6 +52,7 @@ body{
 
 // Blocks
 @import "blocks/logo";
+@import "blocks/tel";
 @import "blocks/btn";
 @import "blocks/social";
 @import "blocks/section";
@@ -55,6 +60,15 @@ body{
 @import "blocks/slider";
 @import "blocks/eight-block";
 @import "blocks/five-col";
+@import "blocks/center";
+@import "blocks/grid-twelve";
+@import "blocks/mega-slider";
+@import "blocks/six-block";
+@import "blocks/six-line";
+@import "blocks/price-list";
+@import "blocks/price-on-of";
+@import "blocks/four-line";
+@import "blocks/footer-header";
 @import "blocks/nav";
 
 

@@ -1,0 +1,18 @@
+.four-line{
+	display: flex;
+	flex-wrap: wrap;
+
+	&__col{
+		width: 25%;
+		padding: 0 40px;
+	}
+	&__img{
+		display: block;
+		margin: 0 auto 9px;
+	}
+	&__text{
+		font-size: 14px;
+		color: $black;
+		text-align: center;
+	}
+}

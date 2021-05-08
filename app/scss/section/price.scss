@@ -1,0 +1,12 @@
+.price{
+	background-color: $gold;
+
+	&__footer{
+		width: 100%;
+		max-width: 820px;
+
+		font-size: 18px;
+		color: $black;
+		text-align: center;
+	}
+}

@@ -39,4 +39,22 @@
 			}
 		}
 	}
+	&-discover{
+		font-weight: 700;
+		
+		background: transparent;
+
+		padding: 1em 3.75em;
+
+		font-size: 12px;
+		font-weight: 700;
+		color: $orange;
+		text-transform: uppercase;
+		border: 2px solid $orange;
+
+		&:hover{
+			color: $white;
+			background-color: $orange;
+		}
+	}
 }

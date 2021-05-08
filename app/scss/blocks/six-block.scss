@@ -1,0 +1,30 @@
+.six-block{
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+
+	&__col{
+		width: 33.3333%;
+		padding: 0 35px;
+		margin-bottom: 75px;
+	}
+	&__img{
+		margin: 0 auto 37px;
+
+		display: block;
+		width: 100%;
+		max-width: 120px;
+	}
+	&__title{
+		margin-bottom: 5px;
+		
+		font-size: 18px;
+		font-weight: 700;
+		color: $black;
+	}
+	&__text{
+		font-size: 16px;
+		font-weight: 300;
+		color: $black;
+	}
+}

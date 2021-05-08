@@ -1,0 +1,17 @@
+.tel{
+	text-align: right;
+	&__text{
+		margin-bottom: 8px;
+		
+		font-size: 14px;
+		font-weight: 400;
+		color: $white;
+	}
+	&__tel-link{
+		margin-bottom: 8px;
+
+		font-size: 20px;
+		font-weight: 700;
+		color: $white;
+	}
+}
