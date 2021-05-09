@@ -1,6 +1,7 @@
 .intro{
 	position: relative;
 	height: 100vh;
+	min-height: 600px;
 
 	display: flex;
 	flex-direction: column;
@@ -16,6 +17,19 @@
 		font-weight: 500;
 		color: $white;
 		text-transform: uppercase;
+
+		@media ($md) {
+			font-size: 47px;
+			margin-bottom: 30px;
+		}
+		@media ($sm) {
+			font-size: 38px;
+			margin-bottom: 25px;
+		}
+		@media ($usm) {
+			font-size: 25px;
+			margin-bottom: 20px;
+		}
 	}
 	&__subtitle{
 		margin-bottom: 10px;
@@ -24,6 +38,16 @@
 		font-weight: 400;
 		color: $white;
 		text-transform: uppercase;
+
+		@media ($md) {
+			font-size: 18px;
+		}
+		@media ($sm) {
+			font-size: 16px;
+		}
+		@media ($usm) {
+			font-size: 14px;
+		}
 	}
 	&__mini-title{
 		margin-bottom: 100px;
@@ -31,6 +55,19 @@
 		font-size: 16px;
 		font-weight: 400;
 		color: $white;
+
+		@media ($md) {
+			font-size: 15px;
+			margin-bottom: 70px;
+		}
+		@media ($sm) {
+			font-size: 14px;
+			margin-bottom: 50px;
+		}
+		@media ($usm) {
+			font-size: 13px;
+			margin-bottom: 30px;
+		}
 	}
 	&__social{
 		position: absolute;

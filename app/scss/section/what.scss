@@ -3,23 +3,48 @@
 
 	background-color: $gold;
 
+	@media ($md) {
+		padding: 40px 0;
+	}
+	@media ($sm) {
+		padding: 30px 0;
+	}
+	@media ($usm) {
+		padding: 20px 0;
+	}
 	&__inner{
 		display: flex;
+		flex-wrap: wrap;
 	}
 	&__left,
 	&__right{
 		width: 50%;
+
+		@media ($md) {
+			width: 100%;
+		}
 	}
 	&__left{
 		display: flex;
 		justify-content: flex-end;
 		padding-right: 40px;
+
+		@media ($md) {
+			justify-content: center;
+			padding-right: 0;
+			margin-bottom: 20px;
+		}
 	}
 	&__right{
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		padding-left: 40px;
+
+		@media ($md) {
+			padding-left: 0;
+			text-align: center;
+		}
 	}
 	&__img{
 		display: block;
@@ -36,6 +61,28 @@
 		&--heavy{
 			font-size: 48px;
 			text-transform: uppercase;
+
+			@media ($md) {
+				font-size: 38px;
+			}
+			@media ($sm) {
+				font-size: 30px;
+			}
+			@media ($usm) {
+				font-size: 24px;
+			}
+		}
+		@media ($md) {
+			font-size: 24px;
+			margin-bottom: 30px;
+		}
+		@media ($sm) {
+			font-size: 19px;
+			margin-bottom: 25px;
+		}
+		@media ($usm) {
+			font-size: 15px;
+			margin-bottom: 15px;
 		}
 	}
 	&__text{
@@ -46,11 +93,32 @@
 		font-size: 16px;
 		font-weight: 300;
 		color: $black;
+
+		@media ($md) {
+			margin: 0 auto 35px;
+			max-width: 100%;
+			font-size: 15px;
+		}
+		@media ($sm) {
+			font-size: 14px;
+			margin-bottom: 25px;
+		}
+		@media ($usm) {
+			font-size: 13px;
+			margin-bottom: 15px;
+		}
+	}
+	&__footer{
+		margin: 0 auto;
 	}
 	&__item{
 		display: flex;
 		align-items: center;
 		margin-bottom: 15px;
+
+		&:last-child{
+			margin-bottom: 0;
+		}
 	}
 	&__icon{
 		display: block;
@@ -75,6 +143,15 @@
 			&7{
 				margin-top: 7px;
 			}
+		}
+		@media ($md) {
+			font-size: 17px;
+		}
+		@media ($sm) {
+			font-size: 16px;
+		}
+		@media ($usm) {
+			font-size: 15px;
 		}
 	}
 }

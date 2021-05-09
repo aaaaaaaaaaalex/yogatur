@@ -1,7 +1,65 @@
 .footer{
-	background-color: #5A5A5A;
+	background-color: #FCF9F1;
+	
+	&__name-office{
+		margin-bottom: 17px;
 
-	&__inner{
-		
+		font-size: 16px;
+		font-weight: 500;
+		color: $black;
 	}
+	&__wrap{
+		display: flex;
+	}
+	&__item{
+		padding: 0 5px;
+	}
+	&__map-item{
+		margin-bottom: 13px;
+	}
+	&__address{
+		font-size: 11px;
+		color: $black;
+	}
+	&__bg{
+		background-color: #383838;
+	}
+	&__underground{
+		padding: 12px 0;
+		display: flex;
+		justify-content: space-between;
+
+	}
+	&__left,
+	&__right{
+		display: flex;
+		align-items: center;
+	}
+	&__right{
+		font-size: 12px;
+		color: $white;
+	}
+	&__content{
+		margin-left: 40px;
+	}
+	&__suptitle{
+		margin-bottom: 8px;
+
+		font-size: 12px;
+		color: $white;
+	}
+	&__link{
+		font-size: 18px;
+		font-weight: 700;
+		color: $white;
+		text-decoration: underline;
+
+		&:hover{
+			color: $orange;
+		}
+	}
+	&__name{
+		margin-bottom: 8px;
+	}
+	
 }

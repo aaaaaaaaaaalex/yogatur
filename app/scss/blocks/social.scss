@@ -1,6 +1,9 @@
 .social{
 	display: flex;
 
+	&--mb9{
+		margin-bottom: 9px;
+	}
 	&__link{
 		margin: 0 5px;
 	}
@@ -44,6 +47,8 @@
 
 		&--orange{
 			fill: $orange;
+			height: 20px;
+			width: 20px;
 		}
 	}
 }

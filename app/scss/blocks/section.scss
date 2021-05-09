@@ -1,6 +1,15 @@
 .section{
 	padding: 80px 0;
 
+	@media ($md) {
+		padding: 60px 0;
+	}
+	@media ($sm) {
+		padding: 40px 0;
+	}
+	@media ($usm) {
+		padding: 30px 0;
+	}
 	&__title{
 		margin-bottom: 20px;
 
@@ -8,6 +17,16 @@
 		font-weight: 500;
 		color: $black;
 		text-align: center;
+
+		@media ($md) {
+			font-size: 30px;
+		}
+		@media ($sm) {
+			font-size: 22px;
+		}
+		@media ($usm) {
+			font-size: 20px;
+		}
 	}
 	&__subtitle{
 		margin-bottom: 30px;
@@ -20,6 +39,16 @@
 	&__subline{
 		display: block;
 		margin: 0 auto 80px;
+
+		@media ($md) {
+			margin: 0 auto 55px;
+		}
+		@media ($sm) {
+			margin: 0 auto 35px;
+		}
+		@media ($usm) {
+			margin: 0 auto 25px;
+		}
 	}
 	&__text{
 		margin-bottom: 40px;

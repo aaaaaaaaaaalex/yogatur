@@ -12,6 +12,16 @@
 		justify-content: space-between;
 		align-items: center;
 		padding-top: 20px;
+
+		@media ($md) {
+			padding-top: 15px;
+		}
+		@media ($sm) {
+			padding-top: 10px;
+		}
+		@media ($usm) {
+			padding-top: 5px;
+		}
 	}
 	&__text{
 		margin-bottom: 8px;

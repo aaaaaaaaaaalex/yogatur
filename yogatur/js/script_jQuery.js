@@ -3444,7 +3444,17 @@ jQuery(function() {
 		centerPadding: '490px',
 		slidesToShow: 1,
 		arrows: false,
-		adaptiveHeight: true
+		responsive: [
+			{
+				breakpoint: 1920,
+				settings: {
+				centerMode: false,
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				arrows: false,
+			  	}
+			}
+		  ]
 	});
 	jQuery("#slider-2").slick({
 		centerMode: true,

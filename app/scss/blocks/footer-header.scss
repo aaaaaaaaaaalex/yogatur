@@ -1,11 +1,20 @@
 .footer-header{
+	padding: 50px 0 55px;
+	
 	&__ceiling{
 		width: 100%;
 		max-width: 550px;
 		display: flex;
+		margin-bottom: 30px;
 	}
 	&__col{
 		width: 50%;
+
+		&:last-child{
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-end;
+		}
 	}
 	&__title{
 		margin-bottom: 23px;
@@ -20,5 +29,10 @@
 		font-size: 16px;
 		font-weight: 500;
 		color: $black;
+
+
+		&--mb9{
+			margin-bottom: 9px;
+		}
 	}
 }
