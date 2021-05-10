@@ -55,7 +55,9 @@
 	&__content{
 		width: 94%;
 		height: 87%;
+		padding: 0 5px;
 		border: 1px solid $white;
+
 
 		display: flex;
 		align-items: center;
@@ -68,12 +70,35 @@
 		font-weight: 500;
 		color: $white;
 		text-transform: uppercase;
+
+		@media ($md) {
+			font-size: 22px;
+			margin-bottom: 10px;
+		}
+		@media ($sm) {
+			font-size: 20px;
+		}
+		@media ($usm) {
+			font-size: 16px;
+			margin-bottom: 5px;
+		}
 	}
 	&__text{
 		width: 100%;
 		max-width: 480px;
+
 		font-size: 18px;
 		color: $white;
+
+		@media ($md) {
+			font-size: 17px;
+		}
+		@media ($sm) {
+			font-size: 15px;
+		}
+		@media ($usm) {
+			font-size: 13px;
+		}
 	}
 
 	.slick-slide{

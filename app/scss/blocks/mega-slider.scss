@@ -1,5 +1,7 @@
 .mega-slider{
-	margin-bottom: 10px;
+	width: 100%;
+	max-width: 970px;
+	margin: 0 auto 10px;
 
 	&__body{
 		height: 540px;
@@ -9,7 +11,11 @@
 		height: auto;
 	}
 	&__item{
+		padding: 0 15px;
+	}
+	&__substrate{
 		position: relative;
+
 	}
 	&__img{
 		display: block;
@@ -17,16 +23,54 @@
 	}
 	&__footer{
 		position: absolute;
+		width: 100%;
 		bottom: 0;
 		left: 0;
 		right: 0;
 		z-index: 1;
 		padding: 37px 60px 10px;
+		display: flex;
+		justify-content: space-between;
 
 		background-color: rgba(#444444, .5);
 
-		display: flex;
-		justify-content: space-between;
+
+		@media ($xl) {
+			padding: 30px 50px 10px;
+		}
+		@media ($lg) {
+			padding: 20px 30px 10px;
+		}
+		@media ($md) {
+			padding: 10px;
+		}
+		@media ($sm) {
+			flex-wrap: wrap;
+			padding: 5px;
+		}
+	}
+	&__left,
+	&__right{
+		@media ($sm) {
+			width: 100%;
+		}
+	}
+	&__left{
+		padding-right: 45px;
+
+		@media ($lg) {
+			padding-right: 35px;
+		}
+		@media ($md) {
+			padding-right: 25px;
+		}
+		@media ($sm) {
+			padding-right: 0;
+			border-bottom: 1px solid $white;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
 	}
 	&__name{
 		margin-bottom: 25px;
@@ -34,6 +78,21 @@
 		font-size: 30px;
 		font-weight: 700;
 		color: $white;
+
+		@media ($md) {
+			margin-bottom: 10px;
+			font-size: 25px;
+		}
+		@media ($sm) {
+			margin-bottom: 5px;
+			font-size: 20px;
+		}
+		@media ($usm) {
+			font-size: 18px;
+		}
+		@media ($iphone5) {
+			font-size: 12px;
+		}
 	}
 	&__kurs{
 		margin-bottom: 10px;
@@ -42,6 +101,20 @@
 		font-style: italic;
 		color: $white;
 
+		@media ($md) {
+			margin-bottom: 5px;
+			font-size: 15px;
+		}
+		@media ($sm) {
+			margin-bottom: 0;
+			font-size: 14px;
+		}
+		@media ($usm) {
+			font-size: 13px;
+		}
+		@media ($iphone5) {
+			font-size: 11px;
+		}
 		&:last-child{
 			margin-bottom: 0;
 		}
@@ -55,6 +128,29 @@
 		color: $white;
 
 		border-left: 2px solid $white;
+
+		@media ($lg) {
+			padding-left: 35px;
+		}
+		@media ($md) {
+			padding-left: 25px;
+			font-size: 13px;
+		}
+		@media ($sm) {
+			padding-left: 0;
+
+			font-size: 12px;
+			border-left: 0;
+		}
+		@media ($iphone5) {
+			font-size: 10px;
+		}
+		
+		&:last-child{
+			@media ($sm) {
+				padding-right: 60px;
+			}
+		}
 	}
 	// Dots
 	.slick-dots{
@@ -62,7 +158,7 @@
 	
 		position: absolute;
 		bottom: 12px;
-		right: 7px;
+		right: 23px;
 		z-index: 1;
 		
 		display: flex;

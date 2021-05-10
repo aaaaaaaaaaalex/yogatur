@@ -6,14 +6,32 @@
 		max-width: 550px;
 		display: flex;
 		margin-bottom: 30px;
+
+		@media ($lg) {
+			margin: 0 auto 30px;
+		}
+		@media ($lg) {
+			flex-wrap: wrap;
+		}
 	}
 	&__col{
 		width: 50%;
+
+		@media ($usm) {
+			width: 100%;
+		}
 
 		&:last-child{
 			display: flex;
 			flex-direction: column;
 			justify-content: flex-end;
+
+		}
+		&:first-child{
+			@media ($lg) {
+				margin-bottom: 20px;
+			}
+			
 		}
 	}
 	&__title{

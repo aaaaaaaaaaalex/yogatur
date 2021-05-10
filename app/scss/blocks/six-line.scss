@@ -3,22 +3,47 @@
 	flex-wrap: wrap;
 	text-align: center;
 
+	@media ($md) {
+		flex-wrap: wrap;
+	}
 	&__col{
 		width: 16.6666%;
 		padding: 0 10px;
+
+		@media ($md) {
+			width: 33.3333%;
+		}
+		@media ($sm) {
+			width: 50%;
+		}
+		@media ($usm) {
+			width: 100%;
+		}
 	}
 	&__item{
 		position: relative;
+
+		@media ($md) {
+			margin-bottom: 30px;
+		}
 	}
 	&__img{
 		display: block;
 		margin: 0 auto 20px;
+
+		@media ($usm) {
+			margin: 0 auto 10px;
+		}
 	}
 	&__arrow{
 		position: absolute;
 		top: 37px;
 		right: -22px;
 		z-index: 1;
+
+		@media ($usm) {
+			display: none;
+		}
 	}
 	&__text{
 		font-size: 12px;

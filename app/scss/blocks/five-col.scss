@@ -7,12 +7,21 @@
 		margin: 0 auto 30px;
 		display: flex;
 		align-items: center;
+
+		@media ($usm) {
+			flex-direction: column;
+		}
 	}
 	&__img{
 		display: block;
 		width: 100%;
 		max-width: 120px;
 		margin-right: 40px;
+
+		@media ($usm) {
+			margin-right: 0;
+			margin-bottom: 10px;
+		}
 	}
 	&__text{
 		width: 100%;
@@ -21,5 +30,20 @@
 		font-size: 18px;
 		font-weight: 300;
 		color: $black;
+
+		@media ($md) {
+			font-size: 17px;
+			max-width: 380px;
+		}
+		@media ($sm) {
+			font-size: 15px;
+			max-width: 280px;
+		}
+		@media ($usm) {
+			max-width: 100%;
+
+			font-size: 13px;
+			text-align: center;
+		}
 	}
 }

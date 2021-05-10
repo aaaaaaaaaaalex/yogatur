@@ -109,7 +109,11 @@
 		}
 	}
 	&__footer{
-		margin: 0 auto;
+
+		@media ($md) {
+			margin: 0 auto;
+
+		}
 	}
 	&__item{
 		display: flex;

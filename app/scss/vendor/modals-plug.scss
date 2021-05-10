@@ -1,0 +1,52 @@
+/* Modal */
+.modal-plug{
+	display: none;
+	width: 100%;
+	height: 100%;
+
+    padding: 15px;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+
+	background-color: rgba(0, 0, 0, 0.8);
+
+	overflow: auto;
+
+	&.show{
+		display: flex;
+	}
+	&__dialog{
+		width: auto;
+		margin: auto;
+
+		background-color: #fff;
+
+		padding: 30px;
+
+		position: relative;
+	}
+	&__close{
+		position: absolute;
+		top: 0;
+		right: 0;
+		z-index: 1;
+
+		padding: 5px 8px;
+		background: 0;
+		border: #000 1px solid;
+
+		cursor: pointer;
+
+		&:hover{
+			background-color: #000;
+    		color: #fff;
+		}
+	}
+}
+.modal-plug__title{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+    padding-bottom: 15px;
+}

@@ -8,5 +8,15 @@
 		font-size: 18px;
 		color: $black;
 		text-align: center;
+
+		@media ($md) {
+			font-size: 17px;
+		}
+		@media ($sm) {
+			font-size: 15px;
+		}
+		@media ($usm) {
+			font-size: 13px;
+		}
 	}
 }

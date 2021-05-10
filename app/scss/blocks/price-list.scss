@@ -6,6 +6,13 @@
 	&__header{
 		background-color: $white;
 		padding: 42px 50px;
+
+		@media ($md) {
+			padding: 20px;
+		}
+		@media ($sm) {
+			padding: 10px;
+		}
 	}
 	&__item{
 		display: flex;
@@ -20,11 +27,38 @@
 		font-size: 21px;
 		font-weight: 300;
 		color: $black;
+
+		@media ($lg) {
+			font-size: 20px;
+		}
+		@media ($md) {
+			font-size: 16px;
+		}
+		@media ($sm) {
+			font-size: 14px;
+		}
+		@media ($usm) {
+			font-size: 12px;
+			padding-right: 10px;
+		}
 	}
 	&__right{
 		font-size: 20px;
 		font-weight: 300;
 		color: #DD490F;
+
+		@media ($lg) {
+			font-size: 19px;
+		}
+		@media ($md) {
+			font-size: 15px;
+		}
+		@media ($sm) {
+			font-size: 13px;
+		}
+		@media ($usm) {
+			font-size: 11px;
+		}
 	}
 	&__footer{
 		display: flex;
@@ -33,10 +67,38 @@
 		padding: 15px 50px;
 
 		background-color: #F4E1B6;
+
+		@media ($md) {
+			padding: 15px 20px;
+			flex-wrap: wrap;
+			text-align: center;
+		}
+		@media ($sm) {
+			padding: 10px;
+		}
+		
 	}
 	&__sentence{
 		font-size: 21px;
 		font-weight: 500;
 		color: $black;
+
+		@media ($lg) {
+			font-size: 18px;
+		}
+		@media ($md) {
+			margin-bottom: 10px;
+			width: 100%;
+
+			font-size: 14px;
+		}
+		@media ($sm) {
+			font-size: 12px;
+		}
+	}
+	&__btn-wrap{
+		@media ($md) {
+			width: 100%;
+		}
 	}
 }

@@ -1,6 +1,13 @@
 .grid-twelve{
 	display: flex;
 	flex-wrap: wrap;
+	
+	@media ($xl) {
+		width: 100%;
+		max-width: 460px;
+		margin: 0 auto;
+		
+	}
 
 	&__item{
 		width: 33.3333%;

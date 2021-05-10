@@ -46,6 +46,10 @@
 				color: $white;
 				background-color: $orange;
 			}
+			@media ($lg) {
+				font-size: 11px;
+				padding: 1.27em 2em;
+			}
 		}
 	}
 	&-discover{

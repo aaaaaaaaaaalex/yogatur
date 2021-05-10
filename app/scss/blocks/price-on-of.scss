@@ -5,15 +5,31 @@
 
 	&__item{
 		display: flex;
-		align-items: center;
 		margin-bottom: 5px;
 	}
 	&__img{
 		display: block;
-		margin: 3px 20px 0 0;
+		margin: 7px 20px 0 0;
+
+		@media ($md) {
+			margin-top: 6px;
+		}
+		@media ($sm) {
+			margin-top: 3px;
+		}
 	}
 	&__text{
 		font-size: 18px;
 		color: #4E4E4E;
+
+		@media ($md) {
+			font-size: 17px;
+		}
+		@media ($sm) {
+			font-size: 15px;
+		}
+		@media ($usm) {
+			font-size: 13px;
+		}
 	}
 }

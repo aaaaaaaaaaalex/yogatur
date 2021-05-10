@@ -2,9 +2,14 @@
 	width: 100%;
 	max-width: 1000px;
 	display: flex;
+	flex-wrap: wrap;
 	padding: 20px 0 70px 20px;
 	position: relative;
 	margin: 0 auto;
+
+	@media ($xl) {
+		padding: 20px 20px 0 20px;
+	}
 
 	&:before{
 		content: "";
@@ -12,16 +17,36 @@
 		top: 0;
 		left: 0;
 		z-index: -1;
-		height: 264px;
-		width: 725px;
+		height: 38%;
+		width: 73%;
 		background-color: $gold;
+
+		@media ($xl) {
+			width: 100%;
+		}
+		@media ($sm) {
+			height: 30%;
+		}
 	}
 	&__left,
 	&__right{
 		width: 50%;
+
+		@media ($xl) {
+			width: 100%;
+		}
+	}
+	&__left{
+		@media ($xl) {
+			margin-bottom: 30px;
+		}
 	}
 	&__right{
 		padding-left: 40px;
+
+		@media ($xl) {
+			padding-left: 0;
+		}
 	}
 	&__title{
 		margin-bottom: 5px;
@@ -30,6 +55,16 @@
 		font-size: 30px;
 		font-weight: 500;
 		color: $black;
+
+		@media ($md) {
+			font-size: 24px;
+		}
+		@media ($sm) {
+			font-size: 19px;
+		}
+		@media ($usm) {
+			font-size: 15px;
+		}
 	}
 	&__subtitle{
 		margin-bottom: 30px;
@@ -37,6 +72,17 @@
 		font-size: 14px;
 		font-weight: 300;
 		color: $gray;
+
+		@media ($md) {
+			font-size: 13px;
+			margin-bottom: 25px;
+		}
+		@media ($sm) {
+			margin-bottom: 20px;
+		}
+		@media ($usm) {
+			margin-bottom: 15px;
+		}
 	}
 	&__content{
 		margin-bottom: 50px;
@@ -44,6 +90,22 @@
 		font-size: 12px;
 		font-weight: 300;
 		color: $black;
+
+		@media ($xl) {
+			margin-bottom: 40px;
+		}
+		@media ($lg) {
+			margin-bottom: 35px;
+		}
+		@media ($md) {
+			margin-bottom: 30px;
+		}
+		@media ($sm) {
+			margin-bottom: 25px;
+		}
+		@media ($usm) {
+			margin-bottom: 20px;
+		}
 	}
 	&__p{
 		margin-bottom: 15px;
@@ -54,13 +116,28 @@
 	}
 	&__footer{
 		display: flex;
+
+		@media ($xl) {
+			width: 100%;
+			max-width: 460px;
+		}
+		@media ($usm) {
+			flex-wrap: wrap;
+		}
 	}
 	&__col{
 		width: 50%;
 
+		@media ($usm) {
+			width: 100%;
+		}
 		&:last-child{
 			display: flex;
 			justify-content: flex-end;
+
+			@media ($usm) {
+				display: block;
+			}
 		}
 	}
 	&__item{
@@ -78,8 +155,15 @@
 		font-weight: 300;
 		color: $black-light;
 
+		@media ($usm) {
+			max-width: 100%;
+		}
 		&--maxw180{
 			max-width: 180px;
+
+			@media ($usm) {
+				max-width: 100%;
+			}
 		}
 	}
 }

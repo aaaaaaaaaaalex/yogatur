@@ -4,7 +4,19 @@
 
 	&__col{
 		width: 25%;
-		padding: 0 40px;
+		padding: 0 5px;
+
+		@media ($md) {
+			width: 50%;
+		}
+		@media ($usm) {
+			width: 100%;
+		}
+	}
+	&__item{
+		@media ($md) {
+			margin-bottom: 30px;
+		}
 	}
 	&__img{
 		display: block;

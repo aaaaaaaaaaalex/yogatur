@@ -7,6 +7,15 @@
 		width: 33.3333%;
 		padding: 0 35px;
 		margin-bottom: 75px;
+
+		@media ($md) {
+			width: 50%;
+			margin-bottom: 35px;
+		}
+		@media ($sm) {
+			width: 100%;
+			margin-bottom: 25px;
+		}
 	}
 	&__img{
 		margin: 0 auto 37px;
@@ -14,6 +23,13 @@
 		display: block;
 		width: 100%;
 		max-width: 120px;
+
+		@media ($md) {
+			margin-bottom: 25px;
+		}
+		@media ($md) {
+			margin-bottom: 10px;
+		}
 	}
 	&__title{
 		margin-bottom: 5px;
@@ -21,10 +37,30 @@
 		font-size: 18px;
 		font-weight: 700;
 		color: $black;
+
+		@media ($md) {
+			font-size: 17px;
+		}
+		@media ($sm) {
+			font-size: 15px;
+		}
+		@media ($usm) {
+			font-size: 13px;
+		}
 	}
 	&__text{
 		font-size: 16px;
 		font-weight: 300;
 		color: $black;
+
+		@media ($md) {
+			font-size: 15px;
+		}
+		@media ($sm) {
+			font-size: 14px;
+		}
+		@media ($usm) {
+			font-size: 13px;
+		}
 	}
 }

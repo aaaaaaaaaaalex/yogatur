@@ -2,6 +2,7 @@
 	&__body{
 		width: 100%;
 		max-width: 780px;
+		margin: 0 auto;
 
 		height: 190px;
 		overflow: hidden;
@@ -15,15 +16,39 @@
 		padding: 0 1px;
 		position: relative;
 		display: flex;
+		align-items: center;
 		overflow: hidden;
+
+		@media ($lg) {
+			padding: 0 30px;
+		}
+		@media ($md) {
+			flex-direction: column;
+			text-align: center;
+			padding: 0 5px;
+		}
 	}
 	&__content{
 		padding-left: 40px;
+
+		@media ($md) {
+			padding-left: 0;
+			margin-top: 10px;
+		}
 	}
 	&__name{
 		font-size: 18px;
 		color: $black;
 
+		@media ($md) {
+			font-size: 17px;
+		}
+		@media ($sm) {
+			font-size: 15px;
+		}
+		@media ($usm) {
+			font-size: 13px;
+		}
 		&--bold{
 			font-weight: 700;
 		}
@@ -45,6 +70,13 @@
 		font-size: 14px;
 		color: #393939;
 		font-style: italic;
+
+		@media ($md) {
+			font-size: 13px;
+		}
+		@media ($sm) {
+			font-size: 12px;
+		}
 	}
 	// Dots
 	.slick-dots{
@@ -59,6 +91,9 @@
 		display: flex;
 		justify-content: center;
 	
+		@media ($usm) {
+			bottom: -20px;
+		}
 		& li{
 			display: flex;
 			align-items: center;
@@ -102,40 +137,55 @@
 			}
 		}
 	}
-}
-/* Slick arrow */
-.slick-arrow{
-    font-size: 0;
-    color: transparent;
+	/* Slick arrow */
+	.slick-arrow{
+		font-size: 0;
+		color: transparent;
+	
+		position: absolute;
+		top: 43%;
+		z-index: 1;
+		transform: translateY(-50%);
+	
+		border: 0;
+		background: 0;
+	
+		cursor: pointer;
 
-    position: absolute;
-    top: 50%;
-    z-index: 1;
-    transform: translateY(-50%);
+		@media ($md) {
+			top: 20%;
+		}
+		@media ($iphone5) {
+			top: 15%;
+		}
+	}
+	.slick-arrow:focus{
+		outline: 0;
+	}
+	.slick-arrow:after{
+		content: "";
+		display: block;
+		width: 15px;
+		height: 15px;
+	
+		border-top: 2px solid #CCCCCC;
+		border-left: 2px solid #CCCCCC;
+	
+	}
+	.slick-prev{
+		left: -65px;
+		transform: rotate(-45deg);
 
-    border: 0;
-    background: 0;
+		@media ($lg) {
+			left: 0;
+		}
+	}
+	.slick-next{
+		right: -65px;
+		transform: rotate(135deg);
 
-    cursor: pointer;
-}
-.slick-arrow:focus{
-    outline: 0;
-}
-.slick-arrow:after{
-    content: "";
-    display: block;
-    width: 15px;
-    height: 15px;
-
-    border-top: 2px solid #CCCCCC;
-    border-left: 2px solid #CCCCCC;
-
-}
-.slick-prev{
-    left: -65px;
-    transform: rotate(-45deg);
-}
-.slick-next{
-    right: -65px;
-    transform: rotate(135deg);
+		@media ($lg) {
+			right: 0;
+		}
+	}
 }

@@ -7,12 +7,26 @@
 		font-size: 16px;
 		font-weight: 500;
 		color: $black;
+
+		@media ($lg) {
+			text-align: center;
+		}
 	}
 	&__wrap{
 		display: flex;
+
+		@media ($lg) {
+			flex-wrap: wrap;
+			flex-direction: column;
+			align-items: center;
+		}
 	}
 	&__item{
 		padding: 0 5px;
+
+		@media ($lg) {
+			margin-bottom: 30px;
+		}
 	}
 	&__map-item{
 		margin-bottom: 13px;
@@ -29,18 +43,36 @@
 		display: flex;
 		justify-content: space-between;
 
+		@media ($md) {
+			flex-direction: column;
+			align-items: center;
+		}
+
 	}
 	&__left,
 	&__right{
 		display: flex;
 		align-items: center;
 	}
+	&__left{
+		@media ($md) {
+			margin-bottom: 20px;
+		}
+	}
 	&__right{
 		font-size: 12px;
 		color: $white;
+
+		@media ($md) {
+			text-align: center;
+		}
 	}
 	&__content{
 		margin-left: 40px;
+
+		@media ($usm) {
+			margin-left: 20px;
+		}
 	}
 	&__suptitle{
 		margin-bottom: 8px;

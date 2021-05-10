@@ -3437,6 +3437,30 @@ jQuery(function() {
 
 }));
 
+	 // Modal
+ $("[data-modal]").on("click", function(event) {
+	event.preventDefault();
+	let modalID = $(this).data("modal");
+	$(modalID).addClass("show");
+	$("body").addClass("no-scroll");
+
+}); 
+
+$("[data-close]").on("click", function(event) {
+	event.preventDefault();
+	let modalParent = $(this).parents(".modal-plug");
+	modalParent.removeClass("show");
+	$("body").removeClass("no-scroll");
+}); 
+
+$(".modal-plug").on("click", function(event) {
+	$(this).removeClass("show");
+	$("body").removeClass("no-scroll");
+});
+
+$(".modal-plug__dialog").on("click", function(event) {
+	event.stopPropagation()
+});
 	
 
 	jQuery("#slider-1").slick({
@@ -3461,7 +3485,18 @@ jQuery(function() {
 		centerPadding: '490px',
 		slidesToShow: 1,
 		arrows: false,
-		adaptiveHeight: true
+		adaptiveHeight: true,
+		responsive: [
+			{
+				breakpoint: 1920,
+				settings: {
+				centerMode: false,
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				arrows: false,
+			  	}
+			}
+		  ]
 	});
 	jQuery("#slider-3").slick({
 		slidesToShow: 1,
