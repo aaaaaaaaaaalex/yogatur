@@ -19,7 +19,7 @@
 @import "vars";
 @import "global";
 
-
+html, body{overflow-x: hidden;}
 body{
     font-family: 'Muller', sans-serif;
     font-size: 16px;

@@ -6,7 +6,9 @@
 	z-index: 1;
 
 	background-color: transparent;
-
+	&__wrap{
+		position: relative;
+	}
 	&__inner{
 		display: flex;
 		justify-content: space-between;
