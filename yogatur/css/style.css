@@ -287,16 +287,12 @@ body {
   padding: 0 15px;
 }
 
-html,
-body {
-  overflow-x: hidden;
-}
-
 body {
   font-family: 'Muller', sans-serif;
   font-size: 16px;
   color: #000;
   line-height: 1.2;
+  overflow-x: hidden;
 }
 
 body.no-scroll {
@@ -1169,7 +1165,6 @@ body.no-scroll {
 }
 
 .eight-block {
-  margin: 0 -20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1864,6 +1859,7 @@ body.no-scroll {
 
   .footer__item {
     margin-bottom: 30px;
+    padding: 0;
   }
 
   .btn-bid--sm {
